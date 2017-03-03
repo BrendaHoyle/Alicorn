@@ -1,0 +1,321 @@
+/*
+COLORS
+CC purple: #9D3968
+CC blue: #00A3B4
+CC grey: #666666
+UXPin background: #EBEBEB
+*/
+
+/*add this to the beginning of every CSS doc to ensure box size is constrained to the size specified*/
+*, *:after, *:before {
+	-webkit-box-sizing: border-box; /*works for opera and chrome*/
+	-moz-box-sizing:border-box; /*works for mozilla*/
+	box-sizing: border-box;
+}
+/*add this to the beginning of every CSS doc to ensure box size is constrained to the size specified*/
+
+
+/*MOBILE----------------MOBILE-----------------MOBILE----*/
+
+
+
+html {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+/*body {
+	margin: 5px;
+}*/
+
+p, a, li, p a {
+		font-size: 13px;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arvo', serif;
+}
+
+h1, h1 a {
+	font-size: 26px;
+	line-height: 30px;
+	padding: 5px;
+	margin: 5px;
+}
+
+img	{
+	height: 40px;
+	width: 40px;
+	/*margin: 10px;*/
+	float: left;
+}
+
+p {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+a {
+	color:#00A3B4;
+	text-decoration: none;
+	}      /* unvisited link */
+
+a:visited {
+	color:#00A3B4;
+	}  /* visited link */
+
+a:hover {
+	color:#9D3968;
+	}  /* mouse over link */
+
+a:active {
+	color:#9D3968;
+	}  /* selected link */
+
+
+
+
+
+
+/*CONTAINERS--------------------------------------*/
+
+.container {
+	/*background-color: none;
+	border: 10px solid none;*/  /*border reduces space inside of a box*/
+	/*margin-left: 10px;*/
+	/*padding: 10px;*/
+	margin: 10px;
+	overflow: auto; /*a way for the container to see the floats contained within*/
+}
+
+.col-one, .col-two {
+/* 	  height: 100%; */
+	float: left;
+}
+
+.col-one {
+	width: 5%;
+	padding: 5px;
+/*	background-color: none;
+	border: 10px solid none;*/
+}
+
+.col-two {
+	width: 95%;
+	padding: 5px;
+/*	background-color: none;
+	border: 10px solid none;*/
+/*	margin: 5px;*/
+}
+
+hr {
+	clear: both;
+}
+
+
+
+.col-two .image, .col-two .text {
+/* 	  height: 100%; */
+	float: left;
+}
+
+.col-two .image {
+	width: 10%;
+	padding-right: 10px;
+	margin-right: 20px;
+}
+
+.col-two .text {
+	width: 80%;
+	/*padding-left: 10px;
+	margin-left: 10px;*/
+}
+
+
+
+
+
+
+/*RESOURCE--------------------------------*/
+
+.resource .container .col-one {
+	width: 10%;
+/*	margin-left: 10px;*/
+}
+
+.resource .container .col-two {
+	width: 90%;
+/*	margin-right: 5px;*/
+}
+
+
+
+.resource-menu {
+	margin-left: 8px;
+}
+
+.resource-menu .col-one {
+	width: 65%;
+	text-align: center;
+	/*padding: 5px;*/
+}
+
+.resource-menu .col-two {
+	width:35%;
+	/*padding: 5px;*/
+}
+
+.resource-menu .col-one li {
+	padding: 0 10px 0 0;
+	float: left;
+}
+
+.resource-menu .col-two li {
+	padding: 0 10px 0 0;
+	float: left;
+}
+
+
+/*UPVOTES------------------------------*/
+
+.upvote, .downvote {
+	text-align: center;
+	font-weight: bolder;
+	padding: 5px;
+}
+
+.votes {
+	text-align: center;
+	padding: 0 5px;
+}
+
+
+/*FILTERS------------------------------*/
+
+.filters {
+	display: block;
+	padding: 5px;
+	margin: 0 10px 20px 10px;
+}
+
+.filters ul li {
+	padding: 0 10px 0 0;
+	float: left;
+}
+
+
+
+
+
+/*COMMENT BOX------------------------------*/
+
+.comment-box {
+	width: 100%;
+	padding: 5px;
+	margin: 10px 10px 50px 10px;
+	clear: both;
+}
+
+form {
+	width: 90%;
+	/*margin: 20px 0 50px 0;*/
+}
+
+form p {
+	margin: 10px 0;
+}
+
+textarea {
+	width: 75%;
+	height: 20%;
+	border: 1px solid #666666;
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.comment-box .button {
+	background-color: #00A3B4;
+	color: white;
+	border: 1px solid #666666;
+	border-radius: 10%;
+	padding: 2px 5px;
+	margin: 10px 0;
+}
+
+.button:hover {
+	background-color: #9D3968;
+	cursor: pointer;
+}
+
+/*button a, button a:visited, button a:hover, button a:active {
+	color: white;
+	text-decoration: none;
+	}*/
+
+
+
+
+
+
+/*DISCUSSION------------------------------*/
+
+/*.discussion {
+	margin-left: 10px;
+}*/
+
+.menu-top, .menu-bot {
+ 	padding: 10px;
+}
+
+.col-two li {
+	padding: 0 10px 0 0;
+ 	float: left;
+}
+
+.col-two p {
+	margin: 10px;
+	clear: both;
+}
+
+.col-one ul {
+	float: left;
+}
+
+/*.new-post {
+	display: none;
+}*/
+
+
+
+
+
+/*SCREEN SIZES----------------SCREEN SIZES-------------------*/
+
+@media (min-width:400px) {
+
+	img	{
+		height: 50px;
+		width: 50px;
+		margin: 10px;
+		float: left;
+	}
+
+	textarea {
+	width: 60%;
+	}
+}
+
+@media (min-width:600px) {
+
+	img	{
+		height: 70px;
+		width: 70px;
+		margin: 10px;
+		float: left;
+	}
+
+	textarea {
+	width: 50%;
+	}
+}
